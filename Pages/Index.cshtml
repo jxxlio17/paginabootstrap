@@ -1,0 +1,53 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="container mt-5">
+    <h1 class="mb-4">Ultimos resultados en los principales deportes</h1>
+
+    <div class="row">
+        <!-- Sección de Fútbol -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="~/images/fucho.jpg" class="card-img-top" alt="Football Image">
+                <div class="card-body">
+                    <h5 class="card-title">Futbol</h5>
+                    <p class="card-text">
+                        Manténgase actualizado con las últimas noticias de fútbol, ​​resultados de partidos y más
+                    </p>
+                    <a href="/Football" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Baloncesto -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="~/images/Basquetbol.jpg" class="card-img-top" alt="Basketball Image">
+                <div class="card-body">
+                    <h5 class="card-title">Basquetbol</h5>
+                    <p class="card-text">
+                        Obtenga las últimas actualizaciones sobre juegos, jugadores y resultados de baloncesto.
+                    </p>
+                    <a href="/Basketball" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Béisbol -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="~/images/beisbol.jpg" class="card-img-top" alt="Baseball Image">
+                <div class="card-body">
+                    <h5 class="card-title">Beisbol</h5>
+                    <p class="card-text">
+                        Póngase al día con las últimas noticias, estadísticas y juegos de béisbol.
+                    </p>
+                    <a href="/Baseball" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
