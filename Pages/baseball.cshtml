@@ -59,4 +59,58 @@
             </tbody>
         </table>
     </div>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Formulario de Compra - Tienda de Deportes</h1>
+
+        <form>
+            <!-- Selección de Producto -->
+            <div class="mb-3">
+                <label for="producto" class="form-label">Selecciona un Producto</label>
+                <select class="form-select" id="producto" required>
+                    <option value="">Elige un producto...</option>
+                    <option value="balon">Balón de Fútbol</option>
+                    <option value="zapatillas">Zapatillas de Running</option>
+                    <option value="camiseta">Camiseta Deportiva</option>
+                    <option value="pantalones">Pantalones Cortos</option>
+                    <option value="guantes">Guantes de Boxeo</option>
+                </select>
+            </div>
+
+            <!-- Cantidad -->
+            <div class="mb-3">
+                <label for="cantidad" class="form-label">Cantidad</label>
+                <input type="number" class="form-control" id="cantidad" placeholder="1" required>
+            </div>
+
+            <!-- Información del Comprador -->
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre Completo</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre completo" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="direccion" class="form-label">Dirección de Envío</label>
+                <textarea class="form-control" id="direccion" rows="3" placeholder="Ingresa tu dirección" required></textarea>
+            </div>
+
+            <!-- Método de Pago -->
+            <div class="mb-3">
+                <label for="metodoPago" class="form-label">Método de Pago</label>
+                <select class="form-select" id="metodoPago" required>
+                    <option value="">Elige un método de pago...</option>
+                    <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="transferencia">Transferencia Bancaria</option>
+                </select>
+            </div>
+
+            <!-- Botón de Enviar -->
+            <button type="submit" class="btn btn-primary">Realizar Compra</button>
+        </form>
+    </div>
 </div>
