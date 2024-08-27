@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "p6IV/ydMids4W5WWQjPxbetb+FD1FyogIGdRGrr+MSk=",
+  "Hash": "uHu6sdH22vpdEIN0NW/kudGZWN2qoY7N5P0rA0cK7wg=",
   "Source": "WebApplication2",
   "BasePath": "_content/WebApplication2",
   "Mode": "Default",
@@ -93,6 +93,25 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\marce\\OneDrive - Universidad Autonoma de Nuevo León\\ESCUELA\\7\\Programacion distribuida\\paginabootstrap\\wwwroot\\images\\articulos.jpg",
+      "SourceId": "WebApplication2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\marce\\OneDrive - Universidad Autonoma de Nuevo León\\ESCUELA\\7\\Programacion distribuida\\paginabootstrap\\wwwroot\\",
+      "BasePath": "_content/WebApplication2",
+      "RelativePath": "images/articulos.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\articulos.jpg"
+    },
+    {
       "Identity": "C:\\Users\\marce\\OneDrive - Universidad Autonoma de Nuevo León\\ESCUELA\\7\\Programacion distribuida\\paginabootstrap\\wwwroot\\images\\Basquetbol.jpg",
       "SourceId": "WebApplication2",
       "SourceType": "Discovered",
@@ -110,25 +129,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Basquetbol.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\marce\\OneDrive - Universidad Autonoma de Nuevo León\\ESCUELA\\7\\Programacion distribuida\\paginabootstrap\\wwwroot\\images\\beisbol.jpg",
-      "SourceId": "WebApplication2",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\marce\\OneDrive - Universidad Autonoma de Nuevo León\\ESCUELA\\7\\Programacion distribuida\\paginabootstrap\\wwwroot\\",
-      "BasePath": "_content/WebApplication2",
-      "RelativePath": "images/beisbol.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\beisbol.jpg"
     },
     {
       "Identity": "C:\\Users\\marce\\OneDrive - Universidad Autonoma de Nuevo León\\ESCUELA\\7\\Programacion distribuida\\paginabootstrap\\wwwroot\\images\\fucho.jpg",
