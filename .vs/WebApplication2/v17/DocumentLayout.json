@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\marce\\OneDrive - Universidad Autonoma de Nuevo Le\u00F3n\\ESCUELA\\7\\Programacion distribuida\\paginabootstrap\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{669F6A2E-14A1-44B2-9C1D-A9819F588D2F}|WebApplication2.csproj|c:\\users\\marce\\onedrive - universidad autonoma de nuevo le\u00F3n\\escuela\\7\\programacion distribuida\\paginabootstrap\\pages\\baseball.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{669F6A2E-14A1-44B2-9C1D-A9819F588D2F}|WebApplication2.csproj|solutionrelative:pages\\baseball.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{669F6A2E-14A1-44B2-9C1D-A9819F588D2F}|WebApplication2.csproj|c:\\users\\marce\\onedrive - universidad autonoma de nuevo le\u00F3n\\escuela\\7\\programacion distribuida\\paginabootstrap\\pages\\football.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{669F6A2E-14A1-44B2-9C1D-A9819F588D2F}|WebApplication2.csproj|solutionrelative:pages\\football.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "baseball.cshtml",
-              "DocumentMoniker": "C:\\Users\\marce\\OneDrive - Universidad Autonoma de Nuevo Le\u00F3n\\ESCUELA\\7\\Programacion distribuida\\paginabootstrap\\Pages\\baseball.cshtml",
-              "RelativeDocumentMoniker": "Pages\\baseball.cshtml",
-              "ToolTip": "C:\\Users\\marce\\OneDrive - Universidad Autonoma de Nuevo Le\u00F3n\\ESCUELA\\7\\Programacion distribuida\\paginabootstrap\\Pages\\baseball.cshtml",
-              "RelativeToolTip": "Pages\\baseball.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Title": "football.cshtml",
+              "DocumentMoniker": "C:\\Users\\marce\\OneDrive - Universidad Autonoma de Nuevo Le\u00F3n\\ESCUELA\\7\\Programacion distribuida\\paginabootstrap\\Pages\\football.cshtml",
+              "RelativeDocumentMoniker": "Pages\\football.cshtml",
+              "ToolTip": "C:\\Users\\marce\\OneDrive - Universidad Autonoma de Nuevo Le\u00F3n\\ESCUELA\\7\\Programacion distribuida\\paginabootstrap\\Pages\\football.cshtml",
+              "RelativeToolTip": "Pages\\football.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAB4AAADXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-27T01:33:19.595Z",
+              "WhenOpened": "2024-09-29T18:56:18.172Z",
               "EditorCaption": ""
             }
           ]

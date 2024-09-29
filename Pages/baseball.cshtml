@@ -38,7 +38,8 @@
                 </ul>
 
                 <h4>Total: <span id="totalCarrito">$0.00</span></h4>
-                <button type="button" class="btn btn-success mt-3">Proceder con la Compra</button>
+                <button type="button" class="btn btn-success mt-3" onclick="comprar()">Proceder con la Compra</button>
+
             </div>
         </div>
     </div>
@@ -46,50 +47,68 @@
     <!-- Enlace a Bootstrap JS y dependencias de Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
+<script>
+    let carrito = [];
+    let total = 0;
 
-    <!-- Script para gestionar el carrito -->
-    <script>
-        let carrito = [];
-        let total = 0;
+    function agregarAlCarrito() {
+        const productoSelect = document.getElementById('producto');
+        const cantidad = parseInt(document.getElementById('cantidad').value);
+        const producto = productoSelect.options[productoSelect.selectedIndex].text;
+        const precio = parseFloat(productoSelect.options[productoSelect.selectedIndex].getAttribute('data-precio'));
 
-        function agregarAlCarrito() {
-            const productoSelect = document.getElementById('producto');
-            const cantidad = parseInt(document.getElementById('cantidad').value);
-            const producto = productoSelect.options[productoSelect.selectedIndex].text;
-            const precio = parseFloat(productoSelect.options[productoSelect.selectedIndex].getAttribute('data-precio'));
-
-            if (productoSelect.value !== "" && cantidad > 0) {
-                // Agregar producto al carrito
-                carrito.push({ producto, cantidad, precio });
-                actualizarCarrito();
-            }
-        }
-
-        function actualizarCarrito() {
-            const listaCarrito = document.getElementById('carrito');
-            listaCarrito.innerHTML = "";
-            total = 0;
-
-            carrito.forEach((item, index) => {
-                const itemTotal = item.precio * item.cantidad;
-                total += itemTotal;
-
-                // Crear elemento de la lista
-                const li = document.createElement('li');
-                li.classList.add('list-group-item', 'd-flex', 'justify-content-between', 'align-items-center');
-                li.innerHTML = `
-                            ${item.producto} - ${item.cantidad} x $${item.precio} = $${itemTotal.toFixed(2)}
-                            <button class="btn btn-danger btn-sm" onclick="eliminarDelCarrito(${index})">Eliminar</button>
-                        `;
-                listaCarrito.appendChild(li);
-            });
-
-            document.getElementById('totalCarrito').innerText = `$${total.toFixed(2)}`;
-        }
-
-        function eliminarDelCarrito(index) {
-            carrito.splice(index, 1);
+        if (productoSelect.value !== "" && cantidad > 0) {
+            // Agregar producto al carrito
+            carrito.push({ producto, cantidad, precio });
             actualizarCarrito();
         }
-    </script>
+    }
+
+    function actualizarCarrito() {
+        const listaCarrito = document.getElementById('carrito');
+        listaCarrito.innerHTML = "";
+        total = 0;
+
+        carrito.forEach((item, index) => {
+            const itemTotal = item.precio * item.cantidad;
+            total += itemTotal;
+
+            // Crear elemento de la lista
+            const li = document.createElement('li');
+            li.classList.add('list-group-item', 'd-flex', 'justify-content-between', 'align-items-center');
+            li.innerHTML = `
+                           ${item.producto} - ${item.cantidad} x $${item.precio} = $${itemTotal.toFixed(2)}
+                           <button class="btn btn-danger btn-sm" onclick="eliminarDelCarrito(${index})">Eliminar</button>
+                       `;
+            listaCarrito.appendChild(li);
+        });
+
+        document.getElementById('totalCarrito').innerText = `$${total.toFixed(2)}`;
+    }
+
+    function eliminarDelCarrito(index) {
+        carrito.splice(index, 1);
+        actualizarCarrito();
+    }
+
+    // Función para procesar la compra
+    function comprar() {
+        if (carrito.length === 0) {
+            alert('El carrito está vacío. Agrega productos antes de comprar.');
+            return;
+        }
+
+        // Confirmar la compra
+        const confirmacion = confirm(`El total de la compra es $${total.toFixed(2)}. ¿Desea continuar con la compra?`);
+
+        if (confirmacion) {
+            // Vaciar el carrito y actualizar la interfaz
+            carrito = [];
+            actualizarCarrito();
+
+            // Mostrar mensaje de éxito
+            alert('Compra realizada con éxito. ¡Gracias por tu compra!');
+        }
+    }
+</script>
 </div>

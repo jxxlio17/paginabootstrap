@@ -4,7 +4,7 @@ body {
     color: #343a40;
 }
 
-h1, h2, h3 {
+h1, h2, h3,th,td {
     font-family: 'Helvetica', sans-serif;
     color: #007bff;
 }
