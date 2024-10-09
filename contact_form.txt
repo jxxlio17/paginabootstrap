@@ -1,0 +1,10 @@
+
+----- Nuevo Mensaje -----
+Nombre: Marcelo
+Correo Electrónico: marcelo.ara@gmail.com
+Asunto: Prueba
+Mensaje: prueba
+Fecha: 09/10/2024 05:44:33 p. m.
+--------------------------
+
+

@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\marce\\OneDrive - Universidad Autonoma de Nuevo Le\u00F3n\\ESCUELA\\7\\Programacion distribuida\\paginabootstrap\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{669F6A2E-14A1-44B2-9C1D-A9819F588D2F}|WebApplication2.csproj|c:\\users\\marce\\onedrive - universidad autonoma de nuevo le\u00F3n\\escuela\\7\\programacion distribuida\\paginabootstrap\\pages\\basketball.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{669F6A2E-14A1-44B2-9C1D-A9819F588D2F}|WebApplication2.csproj|solutionrelative:pages\\basketball.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{669F6A2E-14A1-44B2-9C1D-A9819F588D2F}|WebApplication2.csproj|c:\\users\\marce\\onedrive - universidad autonoma de nuevo le\u00F3n\\escuela\\7\\programacion distribuida\\paginabootstrap\\contact_form.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{669F6A2E-14A1-44B2-9C1D-A9819F588D2F}|WebApplication2.csproj|solutionrelative:contact_form.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{669F6A2E-14A1-44B2-9C1D-A9819F588D2F}|WebApplication2.csproj|c:\\users\\marce\\onedrive - universidad autonoma de nuevo le\u00F3n\\escuela\\7\\programacion distribuida\\paginabootstrap\\pages\\baseball.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{669F6A2E-14A1-44B2-9C1D-A9819F588D2F}|WebApplication2.csproj|solutionrelative:pages\\baseball.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{669F6A2E-14A1-44B2-9C1D-A9819F588D2F}|WebApplication2.csproj|c:\\users\\marce\\onedrive - universidad autonoma de nuevo le\u00F3n\\escuela\\7\\programacion distribuida\\paginabootstrap\\pages\\basketball - copia.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{669F6A2E-14A1-44B2-9C1D-A9819F588D2F}|WebApplication2.csproj|solutionrelative:pages\\basketball - copia.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{669F6A2E-14A1-44B2-9C1D-A9819F588D2F}|WebApplication2.csproj|c:\\users\\marce\\onedrive - universidad autonoma de nuevo le\u00F3n\\escuela\\7\\programacion distribuida\\paginabootstrap\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{669F6A2E-14A1-44B2-9C1D-A9819F588D2F}|WebApplication2.csproj|solutionrelative:pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{669F6A2E-14A1-44B2-9C1D-A9819F588D2F}|WebApplication2.csproj|c:\\users\\marce\\onedrive - universidad autonoma de nuevo le\u00F3n\\escuela\\7\\programacion distribuida\\paginabootstrap\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{669F6A2E-14A1-44B2-9C1D-A9819F588D2F}|WebApplication2.csproj|solutionrelative:pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{669F6A2E-14A1-44B2-9C1D-A9819F588D2F}|WebApplication2.csproj|c:\\users\\marce\\onedrive - universidad autonoma de nuevo le\u00F3n\\escuela\\7\\programacion distribuida\\paginabootstrap\\pages\\basketball - copia.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{669F6A2E-14A1-44B2-9C1D-A9819F588D2F}|WebApplication2.csproj|solutionrelative:pages\\basketball - copia.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "basketball.cshtml",
-              "DocumentMoniker": "C:\\Users\\marce\\OneDrive - Universidad Autonoma de Nuevo Le\u00F3n\\ESCUELA\\7\\Programacion distribuida\\paginabootstrap\\Pages\\basketball.cshtml",
-              "RelativeDocumentMoniker": "Pages\\basketball.cshtml",
-              "ToolTip": "C:\\Users\\marce\\OneDrive - Universidad Autonoma de Nuevo Le\u00F3n\\ESCUELA\\7\\Programacion distribuida\\paginabootstrap\\Pages\\basketball.cshtml",
-              "RelativeToolTip": "Pages\\basketball.cshtml",
-              "ViewState": "AQIAAGMAAAAAAAAAAAAQwHoAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-29T20:03:10.463Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "baseball.cshtml",
-              "DocumentMoniker": "C:\\Users\\marce\\OneDrive - Universidad Autonoma de Nuevo Le\u00F3n\\ESCUELA\\7\\Programacion distribuida\\paginabootstrap\\Pages\\baseball.cshtml",
-              "RelativeDocumentMoniker": "Pages\\baseball.cshtml",
-              "ToolTip": "C:\\Users\\marce\\OneDrive - Universidad Autonoma de Nuevo Le\u00F3n\\ESCUELA\\7\\Programacion distribuida\\paginabootstrap\\Pages\\baseball.cshtml",
-              "RelativeToolTip": "Pages\\baseball.cshtml",
-              "ViewState": "AQIAADYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "basketball - Copia.cshtml",
+              "DocumentMoniker": "C:\\Users\\marce\\OneDrive - Universidad Autonoma de Nuevo Le\u00F3n\\ESCUELA\\7\\Programacion distribuida\\paginabootstrap\\Pages\\basketball - Copia.cshtml",
+              "RelativeDocumentMoniker": "Pages\\basketball - Copia.cshtml",
+              "ToolTip": "C:\\Users\\marce\\OneDrive - Universidad Autonoma de Nuevo Le\u00F3n\\ESCUELA\\7\\Programacion distribuida\\paginabootstrap\\Pages\\basketball - Copia.cshtml",
+              "RelativeToolTip": "Pages\\basketball - Copia.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-29T20:03:04.071Z",
+              "WhenOpened": "2024-10-09T23:43:20.717Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "C:\\Users\\marce\\OneDrive - Universidad Autonoma de Nuevo Le\u00F3n\\ESCUELA\\7\\Programacion distribuida\\paginabootstrap\\Pages\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "Pages\\_ViewStart.cshtml",
-              "ToolTip": "C:\\Users\\marce\\OneDrive - Universidad Autonoma de Nuevo Le\u00F3n\\ESCUELA\\7\\Programacion distribuida\\paginabootstrap\\Pages\\_ViewStart.cshtml",
-              "RelativeToolTip": "Pages\\_ViewStart.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-29T20:03:02.73Z",
+              "Title": "basketball - Copia.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\marce\\OneDrive - Universidad Autonoma de Nuevo Le\u00F3n\\ESCUELA\\7\\Programacion distribuida\\paginabootstrap\\Pages\\basketball - Copia.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\basketball - Copia.cshtml.cs",
+              "ToolTip": "C:\\Users\\marce\\OneDrive - Universidad Autonoma de Nuevo Le\u00F3n\\ESCUELA\\7\\Programacion distribuida\\paginabootstrap\\Pages\\basketball - Copia.cshtml.cs",
+              "RelativeToolTip": "Pages\\basketball - Copia.cshtml.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAuwBkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T23:24:43.384Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\marce\\OneDrive - Universidad Autonoma de Nuevo Le\u00F3n\\ESCUELA\\7\\Programacion distribuida\\paginabootstrap\\Pages\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "Pages\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\marce\\OneDrive - Universidad Autonoma de Nuevo Le\u00F3n\\ESCUELA\\7\\Programacion distribuida\\paginabootstrap\\Pages\\_ViewImports.cshtml",
-              "RelativeToolTip": "Pages\\_ViewImports.cshtml",
+              "DocumentIndex": 0,
+              "Title": "contact_form.txt",
+              "DocumentMoniker": "C:\\Users\\marce\\OneDrive - Universidad Autonoma de Nuevo Le\u00F3n\\ESCUELA\\7\\Programacion distribuida\\paginabootstrap\\contact_form.txt",
+              "RelativeDocumentMoniker": "contact_form.txt",
+              "ToolTip": "C:\\Users\\marce\\OneDrive - Universidad Autonoma de Nuevo Le\u00F3n\\ESCUELA\\7\\Programacion distribuida\\paginabootstrap\\contact_form.txt",
+              "RelativeToolTip": "contact_form.txt",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-29T20:02:59.3Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-10-09T23:23:09.544Z",
               "EditorCaption": ""
             }
           ]

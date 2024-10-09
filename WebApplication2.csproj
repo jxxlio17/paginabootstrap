@@ -10,4 +10,11 @@
     <_ContentIncludedByDefault Remove="wwwroot\images\Basquetbol.jpg" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="Pages\basketball - Copia.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>
