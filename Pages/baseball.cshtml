@@ -1,13 +1,17 @@
 ﻿@page
 @model WebApplication2.Pages.BaseballModel
 @{
+    ViewData["Title"] = "Carrito de Compras - Tienda de Deportes";
 }
+
 <div class="container mt-5">
-        <h1 class="text-center mb-4">Carrito de Compras - Tienda de Deportes</h1>
-        <div class="row">
-            <!-- Formulario de Productos -->
-            <div class="col-md-6">
-                <h3>Agregar Producto</h3>
+    <h1 class="text-center mb-5">Carrito de Compras - Tienda de Deportes</h1>
+    <div class="row g-4">
+
+        <!-- Formulario de Productos -->
+        <div class="col-md-6">
+            <div class="card p-4 shadow-sm">
+                <h3 class="card-title mb-4">Agregar Producto</h3>
                 <form id="formProducto">
                     <div class="mb-3">
                         <label for="producto" class="form-label">Selecciona un Producto</label>
@@ -26,26 +30,30 @@
                         <input type="number" class="form-control" id="cantidad" value="1" min="1" required>
                     </div>
 
-                    <button type="button" class="btn btn-primary" onclick="agregarAlCarrito()">Agregar al Carrito</button>
+                    <button type="button" class="btn btn-primary w-100" onclick="agregarAlCarrito()">Agregar al Carrito</button>
                 </form>
             </div>
+        </div>
 
-            <!-- Carrito de Compras -->
-            <div class="col-md-6">
-                <h3>Tu Carrito</h3>
+        <!-- Carrito de Compras -->
+        <div class="col-md-6">
+            <div class="card p-4 shadow-sm">
+                <h3 class="card-title mb-4">Tu Carrito</h3>
                 <ul id="carrito" class="list-group mb-3">
                     <!-- Aquí se agregarán los productos del carrito -->
                 </ul>
 
-                <h4>Total: <span id="totalCarrito">$0.00</span></h4>
-                <button type="button" class="btn btn-success mt-3" onclick="comprar()">Proceder con la Compra</button>
-
+                <div class="d-flex justify-content-between align-items-center">
+                    <h4>Total: <span id="totalCarrito">$0.00</span></h4>
+                    <button type="button" class="btn btn-success" onclick="comprar()">Proceder con la Compra</button>
+                </div>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- Enlace a Bootstrap JS y dependencias de Popper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<!-- Enlace a Bootstrap JS y dependencias de Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
 <script>
     let carrito = [];
@@ -77,9 +85,9 @@
             const li = document.createElement('li');
             li.classList.add('list-group-item', 'd-flex', 'justify-content-between', 'align-items-center');
             li.innerHTML = `
-                           ${item.producto} - ${item.cantidad} x $${item.precio} = $${itemTotal.toFixed(2)}
-                           <button class="btn btn-danger btn-sm" onclick="eliminarDelCarrito(${index})">Eliminar</button>
-                       `;
+                    ${item.producto} - ${item.cantidad} x $${item.precio} = $${itemTotal.toFixed(2)}
+                    <button class="btn btn-danger btn-sm" onclick="eliminarDelCarrito(${index})">Eliminar</button>
+                `;
             listaCarrito.appendChild(li);
         });
 
@@ -91,24 +99,18 @@
         actualizarCarrito();
     }
 
-    // Función para procesar la compra
     function comprar() {
         if (carrito.length === 0) {
             alert('El carrito está vacío. Agrega productos antes de comprar.');
             return;
         }
 
-        // Confirmar la compra
         const confirmacion = confirm(`El total de la compra es $${total.toFixed(2)}. ¿Desea continuar con la compra?`);
 
         if (confirmacion) {
-            // Vaciar el carrito y actualizar la interfaz
             carrito = [];
             actualizarCarrito();
-
-            // Mostrar mensaje de éxito
             alert('Compra realizada con éxito. ¡Gracias por tu compra!');
         }
     }
 </script>
-</div>

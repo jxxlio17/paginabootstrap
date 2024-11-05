@@ -5,72 +5,72 @@
 }
 
 <div class="container mt-5">
-    <h2 class="text-center">Gestión de Formulario de Contacto</h2>
+    <h2 class="text-center mb-4">Gestión de Formulario de Contacto</h2>
 
     <!-- Menú de opciones -->
-    <div class="btn-group d-flex justify-content-center mb-4" role="group">
-        <button type="button" class="btn btn-primary" onclick="mostrarSeccion('insertar')">Insertar</button>
-        <button type="button" class="btn btn-warning" onclick="mostrarSeccion('actualizar')">Actualizar</button>
-        <button type="button" class="btn btn-info" onclick="mostrarSeccion('consultar')">Consultar</button>
+    <div class="btn-group d-flex justify-content-center mb-5" role="group">
+        <button type="button" class="btn btn-outline-primary" onclick="mostrarSeccion('insertar')">Insertar</button>
+        <button type="button" class="btn btn-outline-warning" onclick="mostrarSeccion('actualizar')">Actualizar</button>
+        <button type="button" class="btn btn-outline-info" onclick="mostrarSeccion('consultar')">Consultar</button>
     </div>
 
     <!-- Sección de Insertar -->
-    <div id="seccion-insertar" class="seccion-formulario" style="display: none;">
-        <h3>Insertar Nuevo Formulario</h3>
+    <div id="seccion-insertar" class="seccion-formulario card p-4 mb-4 shadow" style="display: none;">
+        <h3 class="card-title mb-3">Insertar Nuevo Formulario</h3>
         <form method="post" asp-page-handler="Insertar" class="form-container">
-            <div class="mb-3">
+            <div class="form-group mb-3">
                 <label asp-for="Formulario.Nombre" class="form-label">Nombre Completo</label>
                 <input asp-for="Formulario.Nombre" class="form-control" required />
             </div>
-            <div class="mb-3">
+            <div class="form-group mb-3">
                 <label asp-for="Formulario.Correo" class="form-label">Correo Electrónico</label>
                 <input asp-for="Formulario.Correo" type="email" class="form-control" required />
             </div>
-            <div class="mb-3">
+            <div class="form-group mb-3">
                 <label asp-for="Formulario.Asunto" class="form-label">Asunto</label>
                 <input asp-for="Formulario.Asunto" class="form-control" required />
             </div>
-            <div class="mb-3">
+            <div class="form-group mb-3">
                 <label asp-for="Formulario.Mensaje" class="form-label">Mensaje</label>
                 <textarea asp-for="Formulario.Mensaje" class="form-control" rows="4" required></textarea>
             </div>
-            <button type="submit" class="btn btn-success">Enviar</button>
+            <button type="submit" class="btn btn-success w-100">Enviar</button>
         </form>
     </div>
 
     <!-- Sección de Actualizar -->
-    <div id="seccion-actualizar" class="seccion-formulario" style="display: none;">
-        <h3>Actualizar Formulario Existente</h3>
+    <div id="seccion-actualizar" class="seccion-formulario card p-4 mb-4 shadow" style="display: none;">
+        <h3 class="card-title mb-3">Actualizar Formulario Existente</h3>
         <form method="post" asp-page-handler="Actualizar" class="form-container">
-            <div class="mb-3">
+            <div class="form-group mb-3">
                 <label asp-for="Formulario.Id" class="form-label">ID del Formulario</label>
                 <input asp-for="Formulario.Id" class="form-control" required placeholder="Introduce el ID del formulario a actualizar" />
             </div>
-            <div class="mb-3">
+            <div class="form-group mb-3">
                 <label asp-for="Formulario.Nombre" class="form-label">Nombre Completo</label>
                 <input asp-for="Formulario.Nombre" class="form-control" required />
             </div>
-            <div class="mb-3">
+            <div class="form-group mb-3">
                 <label asp-for="Formulario.Correo" class="form-label">Correo Electrónico</label>
                 <input asp-for="Formulario.Correo" type="email" class="form-control" required />
             </div>
-            <div class="mb-3">
+            <div class="form-group mb-3">
                 <label asp-for="Formulario.Asunto" class="form-label">Asunto</label>
                 <input asp-for="Formulario.Asunto" class="form-control" required />
             </div>
-            <div class="mb-3">
+            <div class="form-group mb-3">
                 <label asp-for="Formulario.Mensaje" class="form-label">Mensaje</label>
                 <textarea asp-for="Formulario.Mensaje" class="form-control" rows="4" required></textarea>
             </div>
-            <button type="submit" class="btn btn-warning">Actualizar</button>
+            <button type="submit" class="btn btn-warning w-100">Actualizar</button>
         </form>
     </div>
 
     <!-- Sección de Consultar -->
-    <div id="seccion-consultar" class="seccion-formulario" style="display: none;">
-        <h3>Consultar Formularios</h3>
-        <table class="table table-bordered">
-            <thead>
+    <div id="seccion-consultar" class="seccion-formulario card p-4 shadow" style="display: none;">
+        <h3 class="card-title mb-3">Consultar Formularios</h3>
+        <table class="table table-striped table-bordered">
+            <thead class="table-dark">
                 <tr>
                     <th>ID</th>
                     <th>Nombre</th>
@@ -100,7 +100,6 @@
         document.getElementById('seccion-insertar').style.display = 'none';
         document.getElementById('seccion-actualizar').style.display = 'none';
         document.getElementById('seccion-consultar').style.display = 'none';
-
         document.getElementById('seccion-' + seccion).style.display = 'block';
     }
 </script>
