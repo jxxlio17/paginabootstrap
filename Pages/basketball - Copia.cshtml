@@ -1,36 +1,106 @@
 ﻿@page
-@model WebApplication2.Pages.BasketballCopiaModel
+@model WebApplication2.Pages.GestionFormularioModel
 @{
-    ViewData["Title"] = "Formulario de Contacto";
+    ViewData["Title"] = "Gestión de Formulario de Contacto";
 }
 
 <div class="container mt-5">
-    <h2 class="text-center">Formulario de Contacto</h2>
+    <h2 class="text-center">Gestión de Formulario de Contacto</h2>
 
-    @if (Model.Formulario.Enviado)
-    {
-        <div class="alert alert-success" role="alert">
-            ¡Tu mensaje ha sido enviado con éxito!
-        </div>
-    }
+    <!-- Menú de opciones -->
+    <div class="btn-group d-flex justify-content-center mb-4" role="group">
+        <button type="button" class="btn btn-primary" onclick="mostrarSeccion('insertar')">Insertar</button>
+        <button type="button" class="btn btn-warning" onclick="mostrarSeccion('actualizar')">Actualizar</button>
+        <button type="button" class="btn btn-info" onclick="mostrarSeccion('consultar')">Consultar</button>
+    </div>
 
-    <form method="post" class="form-container">
-        <div class="mb-3">
-            <label asp-for="Formulario.Nombre" class="form-label">Nombre Completo</label>
-            <input asp-for="Formulario.Nombre" class="form-control" placeholder="Tu nombre" required />
-        </div>
-        <div class="mb-3">
-            <label asp-for="Formulario.Correo" class="form-label">Correo Electrónico</label>
-            <input asp-for="Formulario.Correo" class="form-control" type="email" placeholder="tuemail@dominio.com" required />
-        </div>
-        <div class="mb-3">
-            <label asp-for="Formulario.Asunto" class="form-label">Asunto</label>
-            <input asp-for="Formulario.Asunto" class="form-control" placeholder="Asunto" required />
-        </div>
-        <div class="mb-3">
-            <label asp-for="Formulario.Mensaje" class="form-label">Mensaje</label>
-            <textarea asp-for="Formulario.Mensaje" class="form-control" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
-    </form>
+    <!-- Sección de Insertar -->
+    <div id="seccion-insertar" class="seccion-formulario" style="display: none;">
+        <h3>Insertar Nuevo Formulario</h3>
+        <form method="post" asp-page-handler="Insertar" class="form-container">
+            <div class="mb-3">
+                <label asp-for="Formulario.Nombre" class="form-label">Nombre Completo</label>
+                <input asp-for="Formulario.Nombre" class="form-control" required />
+            </div>
+            <div class="mb-3">
+                <label asp-for="Formulario.Correo" class="form-label">Correo Electrónico</label>
+                <input asp-for="Formulario.Correo" type="email" class="form-control" required />
+            </div>
+            <div class="mb-3">
+                <label asp-for="Formulario.Asunto" class="form-label">Asunto</label>
+                <input asp-for="Formulario.Asunto" class="form-control" required />
+            </div>
+            <div class="mb-3">
+                <label asp-for="Formulario.Mensaje" class="form-label">Mensaje</label>
+                <textarea asp-for="Formulario.Mensaje" class="form-control" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Sección de Actualizar -->
+    <div id="seccion-actualizar" class="seccion-formulario" style="display: none;">
+        <h3>Actualizar Formulario Existente</h3>
+        <form method="post" asp-page-handler="Actualizar" class="form-container">
+            <div class="mb-3">
+                <label asp-for="Formulario.Id" class="form-label">ID del Formulario</label>
+                <input asp-for="Formulario.Id" class="form-control" required placeholder="Introduce el ID del formulario a actualizar" />
+            </div>
+            <div class="mb-3">
+                <label asp-for="Formulario.Nombre" class="form-label">Nombre Completo</label>
+                <input asp-for="Formulario.Nombre" class="form-control" required />
+            </div>
+            <div class="mb-3">
+                <label asp-for="Formulario.Correo" class="form-label">Correo Electrónico</label>
+                <input asp-for="Formulario.Correo" type="email" class="form-control" required />
+            </div>
+            <div class="mb-3">
+                <label asp-for="Formulario.Asunto" class="form-label">Asunto</label>
+                <input asp-for="Formulario.Asunto" class="form-control" required />
+            </div>
+            <div class="mb-3">
+                <label asp-for="Formulario.Mensaje" class="form-label">Mensaje</label>
+                <textarea asp-for="Formulario.Mensaje" class="form-control" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-warning">Actualizar</button>
+        </form>
+    </div>
+
+    <!-- Sección de Consultar -->
+    <div id="seccion-consultar" class="seccion-formulario" style="display: none;">
+        <h3>Consultar Formularios</h3>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Asunto</th>
+                    <th>Mensaje</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var formulario in Model.Formularios)
+                {
+                    <tr>
+                        <td>@formulario.Id</td>
+                        <td>@formulario.Nombre</td>
+                        <td>@formulario.Correo</td>
+                        <td>@formulario.Asunto</td>
+                        <td>@formulario.Mensaje</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
 </div>
+
+<script>
+    function mostrarSeccion(seccion) {
+        document.getElementById('seccion-insertar').style.display = 'none';
+        document.getElementById('seccion-actualizar').style.display = 'none';
+        document.getElementById('seccion-consultar').style.display = 'none';
+
+        document.getElementById('seccion-' + seccion).style.display = 'block';
+    }
+</script>
