@@ -1,5 +1,5 @@
 ﻿@page
-@model WebApplication2.Pages.BasketballModel2
+@model WebApplication2.Pages.BasketballCopiaModel
 @{
     ViewData["Title"] = "Formulario de Contacto";
 }
@@ -7,7 +7,7 @@
 <div class="container mt-5">
     <h2 class="text-center">Formulario de Contacto</h2>
 
-    @if (Model.Enviado)
+    @if (Model.Formulario.Enviado)
     {
         <div class="alert alert-success" role="alert">
             ¡Tu mensaje ha sido enviado con éxito!
@@ -16,20 +16,20 @@
 
     <form method="post" class="form-container">
         <div class="mb-3">
-            <label asp-for="Nombre" class="form-label">Nombre Completo</label>
-            <input asp-for="Nombre" class="form-control" placeholder="Tu nombre" required />
+            <label asp-for="Formulario.Nombre" class="form-label">Nombre Completo</label>
+            <input asp-for="Formulario.Nombre" class="form-control" placeholder="Tu nombre" required />
         </div>
         <div class="mb-3">
-            <label asp-for="Email" class="form-label">Correo Electrónico</label>
-            <input asp-for="Email" class="form-control" type="email" placeholder="tuemail@dominio.com" required />
+            <label asp-for="Formulario.Correo" class="form-label">Correo Electrónico</label>
+            <input asp-for="Formulario.Correo" class="form-control" type="email" placeholder="tuemail@dominio.com" required />
         </div>
         <div class="mb-3">
-            <label asp-for="Asunto" class="form-label">Asunto</label>
-            <input asp-for="Asunto" class="form-control" placeholder="Asunto" required />
+            <label asp-for="Formulario.Asunto" class="form-label">Asunto</label>
+            <input asp-for="Formulario.Asunto" class="form-control" placeholder="Asunto" required />
         </div>
         <div class="mb-3">
-            <label asp-for="Mensaje" class="form-label">Mensaje</label>
-            <textarea asp-for="Mensaje" class="form-control" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            <label asp-for="Formulario.Mensaje" class="form-label">Mensaje</label>
+            <textarea asp-for="Formulario.Mensaje" class="form-control" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
         </div>
         <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
